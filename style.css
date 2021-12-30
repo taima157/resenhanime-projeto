@@ -20,34 +20,39 @@
     padding: 0px;
 }
 
+hr {
+    color: var(--cor5);
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--cor6);
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor2), 30%, var(--cor6));
     height: 120px;
 }
 
 header h1 {
     font-family: var(--font-logo);
     color: white;
-    font-size: 3em;
+    font-size: 5em;
     letter-spacing: 3px;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     text-shadow: 4px 4px 1px black;
 }
 
 nav {
-    background-color: var(--cor5);
+    background-color: white;
     position: relative;
     height: 60px;
     max-width: 940px;
     margin: auto;
-    margin-top: 0px;
-    border-radius: 0px 0px 10px 10px;
+    margin-top: 20px;
+    border: 2px solid var(--cor4);
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 4px 4px 1px black;
 }
 
@@ -66,21 +71,19 @@ nav li {
 nav a {
     text-decoration: none;
     margin: 0px 3px;
-    color: white;
-    padding: 5px 18px;
+    color: var(--cor6);
+    padding: 8px 18px;
     letter-spacing: 1px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 1.1em;
-    text-shadow: 3px 3px 1px black;
 }
 
 nav a:hover {
-    background-color: white;
-    color: var(--cor6);
+    background-color: var(--cor6);
+    color: white;
     border-radius: 25px;
     transform: translateX(5px);
-    transition: 0.5s;
-    text-shadow: 0px 0px 0px transparent;
+    transition: 0.2s;
 }
 
 main {
@@ -108,8 +111,13 @@ main h2 {
 
 article h1 {
     font-family: var(--font-titulo);
-    font-size: 2em;
-    padding-bottom: 10px;
+    background-color: var(--cor5);
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-radius: 25px;
 }
 
 article p {
@@ -128,39 +136,57 @@ article strong {
 .analises-home {
     max-width: 850px;
     min-width: 250px;
-    min-height: 500px;
-    border: 1px solid lightslategray;
+    border: 1px solid var(--cor5);
     margin: 20px auto;
     padding: 20px;
-    display: flex;
-}
-
-.analises-home p {
-    display: flex;
-    position: relative;
-    padding-right: 20px;
-    padding-top: 30px;
+    border-radius: 15px;
 }
 
 .analises-home h3 {
-    display: flex;
-    position: absolute;
-    padding-bottom: 20px;
     font-family: var(--font-titulo);
     font-size: 1.5em;
+    background-color: var(--cor5);
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    margin: -21px;
+    padding: 15px 15px 15px 25px;
 }
 
 .analises-home img {
-    display: flex;
-    position: static;
+    max-width: 100%;
+    margin-top: 40px;
 }
 
+.analises-home button {
+    background-color: var(--cor5);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+.analises-home button > a {
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.analises-home button:hover {
+    background-color: white;
+    border: 1px solid var(--cor5);
+    transition: 0.2s;
+}
+
+.analises-home button:hover > a {
+    color: var(--cor5);
+    font-weight: bold;
+}
 
 footer {
     background-color: #39007a83;
     color: white;
     height: 170px;
-    
 }
 
 footer p {
@@ -170,17 +196,8 @@ footer p {
 }
 
 #contatos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contatos ul {
     padding-top: 20px;
-}
-
-#contatos li {
-    list-style: none;
+    text-align: center;
 }
 
 #contatos a {
