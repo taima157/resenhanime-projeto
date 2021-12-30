@@ -44,7 +44,7 @@ nav {
     background-color: var(--cor5);
     position: relative;
     height: 60px;
-    max-width: 500px;
+    max-width: 940px;
     margin: auto;
 }
 
@@ -62,9 +62,9 @@ nav li {
 
 nav a {
     text-decoration: none;
-    margin: 0px 5px;
+    margin: 0px 3px;
     color: white;
-    padding: 7px 18px;
+    padding: 5px 18px;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 1.1em;
@@ -80,8 +80,31 @@ nav a:hover {
 
 main {
     background-color: white;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+main article {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+main h1 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+main p {
+    font-size: 1.1em;
+    font-weight: 520;
+    padding-bottom: 10px;
+}
+
+main p strong {
+    font-weight: 1000;
 }
 
