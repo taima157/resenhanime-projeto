@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+    --cor0: rgb(240, 206, 255);
     --cor1: #9D4BFB;
     --cor2: #7500FA;
     --cor3: #5D00C7;
@@ -134,6 +135,7 @@ article strong {
 }
 
 .analises-home {
+    background-color: var(--cor0);
     max-width: 850px;
     min-width: 250px;
     border: 1px solid var(--cor5);
@@ -149,12 +151,13 @@ article strong {
     color: white;
     border-radius: 15px 15px 0px 0px;
     margin: -21px;
+    margin-bottom: 20px;
     padding: 15px 15px 15px 25px;
 }
 
+
 .analises-home img {
     max-width: 100%;
-    margin-top: 40px;
 }
 
 .analises-home button {
