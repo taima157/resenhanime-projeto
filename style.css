@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     height: 120px;
 }
 
@@ -46,6 +46,8 @@ nav {
     height: 60px;
     max-width: 940px;
     margin: auto;
+    margin-top: 0px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 nav ul {
@@ -83,9 +85,10 @@ main {
     max-width: 900px;
     min-width: 300px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 main article {
@@ -112,13 +115,42 @@ article strong {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: #39007a83;
     color: white;
-    height: 200px;
+    height: 170px;
+    
 }
 
 footer p {
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
     font-size: 1.1em;
+}
+
+#contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatos ul {
+    padding-top: 20px;
+}
+
+#contatos li {
+    list-style: none;
+}
+
+#contatos a {
+    padding: 15px;
+}
+
+#contatos i {
+    font-size: 2em;
+    color: var(--cor4);
+}
+
+#contatos a:hover > i {
+    color: magenta;
+    transition: 0.5s;
 }
