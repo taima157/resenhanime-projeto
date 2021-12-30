@@ -48,6 +48,7 @@ nav {
     margin: auto;
     margin-top: 0px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 1px black;
 }
 
 nav ul {
@@ -70,6 +71,7 @@ nav a {
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 1.1em;
+    text-shadow: 3px 3px 1px black;
 }
 
 nav a:hover {
@@ -78,6 +80,7 @@ nav a:hover {
     border-radius: 25px;
     transform: translateX(5px);
     transition: 0.5s;
+    text-shadow: 0px 0px 0px transparent;
 }
 
 main {
@@ -89,10 +92,18 @@ main {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 1px black;
 }
 
 main article {
     padding: 10px;
+}
+
+main h2 {
+    font-family: var(--font-titulo);
+    font-size: 1.8em;
+    padding: 10px;
+    padding-top: 0px;
 }
 
 article h1 {
@@ -113,6 +124,37 @@ article p {
 article strong {
     font-weight: 1000;
 }
+
+.analises-home {
+    max-width: 850px;
+    min-width: 250px;
+    min-height: 500px;
+    border: 1px solid lightslategray;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+}
+
+.analises-home p {
+    display: flex;
+    position: relative;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.analises-home h3 {
+    display: flex;
+    position: absolute;
+    padding-bottom: 20px;
+    font-family: var(--font-titulo);
+    font-size: 1.5em;
+}
+
+.analises-home img {
+    display: flex;
+    position: static;
+}
+
 
 footer {
     background-color: #39007a83;
