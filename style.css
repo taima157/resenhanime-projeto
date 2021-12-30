@@ -37,7 +37,7 @@ header {
 header h1 {
     font-family: var(--font-logo);
     color: white;
-    font-size: 5em;
+    font-size: 4.5em;
     letter-spacing: 3px;
     padding-top: 20px;
     text-align: center;
