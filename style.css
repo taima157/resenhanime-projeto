@@ -98,7 +98,7 @@ main article {
 article h1 {
     font-family: var(--font-titulo);
     font-size: 2em;
-
+    padding-bottom: 10px;
 }
 
 article p {
