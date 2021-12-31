@@ -104,13 +104,13 @@ main article {
 }
 
 main h2 {
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     font-family: var(--font-titulo);
     color: white;
     font-size: 1.8em;
     padding: 10px;
     margin: 0px -20px 20px ;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     letter-spacing: 1px;
     text-shadow: 3px 3px 1px black;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.315);
