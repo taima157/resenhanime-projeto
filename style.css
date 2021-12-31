@@ -104,10 +104,17 @@ main article {
 }
 
 main h2 {
+    background-color: var(--cor5);
     font-family: var(--font-titulo);
+    color: white;
     font-size: 1.8em;
     padding: 10px;
-    padding-top: 0px;
+    margin: 0px -20px 20px ;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 1px black;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.315);
+    font-weight: 800;
 }
 
 article h1 {
@@ -117,8 +124,10 @@ article h1 {
     color: white;
     text-align: center;
     padding: 10px 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 25px;
+    text-shadow: 3px 3px 1px black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.315);
 }
 
 article p {
@@ -142,6 +151,7 @@ article strong {
     margin: 20px auto;
     padding: 20px;
     border-radius: 15px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.315);
 }
 
 .analises-home h3 {
@@ -153,31 +163,37 @@ article strong {
     margin: -21px;
     margin-bottom: 20px;
     padding: 15px 15px 15px 25px;
+    text-shadow: 3px 3px 1px black;
 }
 
 
 .analises-home img {
     max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
 .analises-home button {
     background-color: var(--cor5);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 50px;
-    border: none;
+    border: 1px solid var(--cor5);
+    display: block;
+    margin-left: auto;
 }
 
 .analises-home button > a {
     text-decoration: none;
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
+    padding: 10px 15px;
 }
 
 .analises-home button:hover {
     background-color: white;
-    border: 1px solid var(--cor5);
     transition: 0.2s;
 }
 
@@ -189,13 +205,13 @@ article strong {
 footer {
     background-color: #39007a83;
     color: white;
-    height: 170px;
+    height: 200px;
 }
 
 footer p {
     padding-top: 15px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #contatos {
