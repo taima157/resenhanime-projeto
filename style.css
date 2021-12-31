@@ -161,17 +161,40 @@ article strong {
     text-shadow: 3px 3px 1px black;
 }
 
+.analises-home h4 {
+    font-family: var(--font-titulo);
+    font-size: 1.5em;
+    background-color: var(--cor5);
+    color: white;
+    margin: -21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 15px 15px 25px;
+    text-shadow: 3px 3px 1px black;
+}
+
 .analises-home img {
+    width: 500px;
     max-width: 100%;
     display: block;
     margin: auto;
 }
 
-.analises-home a {
-    text-decoration: none;
+.analises-home a[rel=external]:after {
+    content: '\00A0\1F517\00A0';
 }
 
-.analises-home button {
+.analises-home a {
+    background-color: #c28cff;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.ler-mais {
+    text-decoration: none;
+    text-align: center;
     font-family: var(--font-main);
     background-color: var(--cor5);
     color: white;
@@ -181,11 +204,12 @@ article strong {
     font-weight: bold;
     letter-spacing: 1px;
     border: 1px solid var(--cor5);
+    width: 140px;
     display: block;
     margin-left: auto;
 }
 
-.analises-home button:hover {
+.ler-mais:hover {
     background-color: white;
     color: var(--cor5);
     transition: 0.5s;
