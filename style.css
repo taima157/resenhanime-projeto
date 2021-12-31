@@ -21,10 +21,6 @@
     padding: 0px;
 }
 
-hr {
-    color: var(--cor5);
-}
-
 body {
     font-family: var(--font-main);
     background-color: var(--cor6);
@@ -49,11 +45,11 @@ nav {
     background-color: white;
     position: relative;
     height: 60px;
-    max-width: 940px;
+    max-width: 500px;
     margin: auto;
     margin-top: 20px;
     border: 2px solid var(--cor4);
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 4px 4px 1px black;
 }
 
@@ -93,7 +89,7 @@ main {
     min-width: 300px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 4px 4px 1px black;
@@ -108,7 +104,6 @@ main h2 {
     font-family: var(--font-titulo);
     color: white;
     font-size: 1.8em;
-    padding: 10px;
     margin: 0px -20px 20px ;
     padding: 10px 10px 10px 20px;
     letter-spacing: 1px;
@@ -125,7 +120,7 @@ article h1 {
     text-align: center;
     padding: 10px 0px;
     margin-bottom: 20px;
-    border-radius: 25px;
+    border-radius: 30px;
     text-shadow: 3px 3px 1px black;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.315);
 }
@@ -150,7 +145,7 @@ article strong {
     border: 1px solid var(--cor5);
     margin: 20px auto;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.315);
 }
 
@@ -159,13 +154,12 @@ article strong {
     font-size: 1.5em;
     background-color: var(--cor5);
     color: white;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     margin: -21px;
     margin-bottom: 20px;
     padding: 15px 15px 15px 25px;
     text-shadow: 3px 3px 1px black;
 }
-
 
 .analises-home img {
     max-width: 100%;
@@ -173,33 +167,28 @@ article strong {
     margin: auto;
 }
 
+.analises-home a {
+    text-decoration: none;
+}
+
 .analises-home button {
+    font-family: var(--font-main);
     background-color: var(--cor5);
-    padding: 10px 10px;
-    border-radius: 50px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
     border: 1px solid var(--cor5);
     display: block;
     margin-left: auto;
 }
 
-.analises-home button > a {
-    text-decoration: none;
-    font-family: var(--font-main);
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: white;
-    font-weight: 700;
-    padding: 10px 15px;
-}
-
 .analises-home button:hover {
     background-color: white;
-    transition: 0.2s;
-}
-
-.analises-home button:hover > a {
     color: var(--cor5);
-    font-weight: bold;
+    transition: 0.5s;
 }
 
 footer {
