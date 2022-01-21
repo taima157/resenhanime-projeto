@@ -23,49 +23,56 @@
 
 body {
     font-family: var(--font-main);
-    background-color: var(--cor6);
+    background-color: white;
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor2), 30%, var(--cor6));
-    height: 120px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
+header > a {
+    text-decoration: none;
     font-family: var(--font-logo);
     color: white;
     font-size: 4.1em;
     letter-spacing: 3px;
-    padding-top: 20px;
     text-align: center;
     text-shadow: 4px 4px 1px black;
+    margin: 0px 20px;
+    width: 315px;
 }
 
-nav {
+header > div {
+    display: none;
+}
+
+nav#menu-horizontal {
     background-color: white;
     position: relative;
     height: 60px;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 20px;
+    width: 430px;
     border: 2px solid var(--cor4);
     border-radius: 30px;
-    box-shadow: 4px 4px 1px black;
+    margin-right: 20px;
 }
 
-nav ul {
+nav#menu-horizontal ul {
     padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav li {
+nav#menu-horizontal li {
     position: relative;
     list-style: none;
 }
 
-nav a {
+nav#menu-horizontal a {
     text-decoration: none;
     margin: 0px 3px;
     color: var(--cor6);
@@ -75,7 +82,7 @@ nav a {
     border-radius: 30px;
 }
 
-nav a:hover {
+nav#menu-horizontal a:hover {
     background-color: var(--cor6);
     color: white;
     border-radius: 30px;
@@ -83,16 +90,19 @@ nav a:hover {
     transition: 0.5s;
 }
 
+nav#menu-side {
+    display: none;
+}
+
 main {
     background-color: white;
     max-width: 900px;
     min-width: 300px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 80px;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 4px 4px 1px black;
 }
 
 main article {
@@ -118,7 +128,7 @@ article h1 {
     font-size: 2.5em;
     color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 5px;
     margin-bottom: 20px;
     border-radius: 30px;
     text-shadow: 3px 3px 1px black;
@@ -216,7 +226,7 @@ article strong {
 }
 
 footer {
-    background-color: #39007a83;
+    background-color: var(--cor6);
     color: white;
     height: 200px;
 }
@@ -244,4 +254,60 @@ footer p {
 #contatos a:hover > i {
     color: magenta;
     transition: 0.5s;
+}
+
+
+@media (max-width: 765px) {
+    nav#menu-horizontal {
+        display: none;
+    }
+
+    nav#menu-side {
+        position: absolute; 
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: white;
+        border: 1px solid var(--cor4);
+        margin-left: auto;
+    }
+
+    nav#menu-side ul {
+        padding-top: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav#menu-side li {
+        position: relative;
+        list-style: none;
+    }
+    
+    nav#menu-side a {
+        text-decoration: none;
+        margin: 0px 3px;
+        color: var(--cor6);
+        padding: 8px 16px;
+        font-weight: 800;
+        font-size: 1.1em;
+        border-radius: 30px;
+    }
+
+
+    header > div {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    header > div > button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    header > div > button > i {
+        color: white;
+        font-size: 40px;
+    }
 }
