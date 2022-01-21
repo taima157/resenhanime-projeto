@@ -1,8 +1,14 @@
-const menuSide = document.querySelector('#menu-side')
+const menuButton = document.getElementById('btn-menu')
+const header = document.querySelector('#header')
 
-menuSide.addEventListener('click', function(e){
-    e.preventDefault(),
-    function() {
-        menuSide.style.display = 'block'
+function toggleMenu(event) {
+    if (event.type === 'touchstart') {
+        event.preventDefault()
     }
-})
+    const nav = document.getElementById('nav')
+    nav.classList.toggle('active')
+    header.style.display = 'fixed'
+}
+
+menuButton.addEventListener('click', toggleMenu)
+menuButton.addEventListener('touchstart', toggleMenu)

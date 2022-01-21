@@ -46,33 +46,34 @@ header > a {
     width: 315px;
 }
 
-header > div {
+header button {
     display: none;
+    margin-left: auto;
 }
 
-nav#menu-horizontal {
-    background-color: white;
+nav#nav {
     position: relative;
-    height: 60px;
-    width: 430px;
-    border: 2px solid var(--cor4);
-    border-radius: 30px;
-    margin-right: 20px;
+    display: flex;
 }
 
-nav#menu-horizontal ul {
-    padding-top: 15px;
+#menu {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
+    max-width: 480px;
+    border-radius: 30px;
+    margin-right: 20px;
+    border: 2px solid var(--cor4);
 }
 
-nav#menu-horizontal li {
+#menu li {
     position: relative;
     list-style: none;
 }
 
-nav#menu-horizontal a {
+#menu a {
     text-decoration: none;
     margin: 0px 3px;
     color: var(--cor6);
@@ -82,16 +83,12 @@ nav#menu-horizontal a {
     border-radius: 30px;
 }
 
-nav#menu-horizontal a:hover {
+#menu a:hover {
     background-color: var(--cor6);
     color: white;
     border-radius: 30px;
     transform: translateX(5px);
     transition: 0.5s;
-}
-
-nav#menu-side {
-    display: none;
 }
 
 main {
@@ -258,56 +255,95 @@ footer p {
 
 
 @media (max-width: 765px) {
-    nav#menu-horizontal {
+    #menu {
         display: none;
     }
 
-    nav#menu-side {
-        position: absolute; 
-        right: 0;
-        width: 50vw;
-        height: 100vh;
-        background-color: white;
-        border: 1px solid var(--cor4);
-        margin-left: auto;
-    }
-
-    nav#menu-side ul {
-        padding-top: 15px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    nav#menu-side li {
-        position: relative;
-        list-style: none;
-    }
-    
-    nav#menu-side a {
-        text-decoration: none;
-        margin: 0px 3px;
-        color: var(--cor6);
-        padding: 8px 16px;
-        font-weight: 800;
-        font-size: 1.1em;
-        border-radius: 30px;
-    }
-
-
-    header > div {
-        display: block;
-        margin-left: auto;
+    #btn-menu {
+        display: flex;
         margin-right: 20px;
-    }
-
-    header > div > button {
         background: none;
         border: none;
         cursor: pointer;
     }
 
-    header > div > button > i {
+    #btn-menu > i {
         color: white;
         font-size: 40px;
+    }
+
+    #btn-menu .fa-times {
+        display: none;
+    }
+
+    #menu { 
+        display: block;
+        position: absolute;
+        top: 85px;
+        border: none;
+        border-radius: 0;
+        width: 0;
+        margin: 0;
+        height: 40vh;
+        right: 0;
+        transition: 0.6s;
+        background-color: var(--cor6);
+        visibility: hidden;
+        overflow-x: hidden;
+        border-radius: 0px 0px 0px 15px;
+    }
+
+    #nav.active #menu {
+        top: 85;
+        display: block;
+        width: 50vw;
+        visibility: visible;
+        overflow-x: auto;
+    }
+
+    #nav.active #menu a {
+        color: white;
+        display: block;
+        padding: 10px 10px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 10px;
+        border-bottom: 1px solid white;
+        border-radius: 0;
+    }
+
+    #nav.active #menu a:hover {
+        background-color: white;
+        color: var(--cor6);
+        margin-right: 1rem;
+        padding-left: 15px;
+        border-radius: 30px;
+        transition: 0.2s;
+    }
+
+    #nav.active .fa-times {
+        display: block;
+        font-size: 50px;
+    }
+
+    #nav.active .fa-bars {
+        display: none;
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    header > a {
+        font-size: 3.5em;
+        margin-left: 0px;
+    }
+
+    #bnt-menu .fa-times {
+        font-size: 40px;
+    }
+
+    #bnt-menu .fa-bars {
+        font-size: 20px;
     }
 }
