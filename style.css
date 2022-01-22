@@ -60,7 +60,7 @@ nav#nav {
     display: flex;
 }
 
-#menu > #contatos {
+#menu > #contatos-menu {
     display: none;
 }
 
@@ -301,16 +301,25 @@ footer p {
         border-radius: 0px 0px 0px 15px;
     }
 
-    #contatos {
-        width: 50vh;
+    #contatos-menu {
+        height: 50px;
         position: absolute;
-        transform: none;
+        display: block;
+        align-items: center;
+        margin-bottom: 20px;
         bottom: 0;
-        padding: 0;
-        width: 0;
         left: 50%;
-        margin-left: -10vh;
-        visibility: hidden;
+        margin-left: -11vh;
+    }
+
+    #contatos-menu i:hover {
+        color: blueviolet;
+    }
+
+    #contatos-menu i {
+        color: white;
+        font-size: 2em;
+        padding-left: 10px;
     }
 
     #nav.active #menu {
@@ -341,7 +350,7 @@ footer p {
         transition: 0.2s;
     }
 
-    #nav.active #contatos {
+    #nav.active #contatos-menu {
         position: absolute;
         display: flex;
         visibility: visible;
@@ -364,6 +373,17 @@ footer p {
         font-size: 2.5em;
         width: 250px;
         margin: 0;
+    }
+
+    #contatos-menu {
+        left: 11.5vh;
+        margin-left: -9.5vh;
+    }
+
+    #contatos-menu i {
+        color: white;
+        font-size: 1.5em;
+        padding-left: 5px;
     }
 
     #bnt-menu .fa-times {
